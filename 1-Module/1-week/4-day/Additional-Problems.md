@@ -57,7 +57,7 @@ printHello();  // Output: Hello, World!
 
 # Booleans Core Principals
 
-### 1. Using Logical NOT 
+### 1. Using Logical NOT
 
 **Task**: Write a function named `isFalse` that checks if a given boolean value is `false`.
 
@@ -75,7 +75,7 @@ console.log(areBothTrue(true, true));   // Output: true
 console.log(areBothTrue(true, false));  // Output: false
 ```
 
-### 3. Using Logical OR \
+### 3. Using Logical OR 
 
 **Task**: Write a function named `isEitherTrue` that checks if at least one of the provided boolean values is `true`.
 
