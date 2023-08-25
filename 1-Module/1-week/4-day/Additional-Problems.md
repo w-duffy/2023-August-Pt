@@ -57,7 +57,7 @@ printHello();  // Output: Hello, World!
 
 # Booleans Core Principals
 
-### 1. Using Logical NOT (`!`)
+### 1. Using Logical NOT 
 
 **Task**: Write a function named `isFalse` that checks if a given boolean value is `false`.
 
@@ -66,7 +66,7 @@ console.log(isFalse(true));  // Output: false
 console.log(isFalse(false)); // Output: true
 ```
 
-### 2. Using Logical AND (`&&`)
+### 2. Using Logical AND
 
 **Task**: Write a function named `areBothTrue` that checks if both provided boolean values are `true`.
 
@@ -75,7 +75,7 @@ console.log(areBothTrue(true, true));   // Output: true
 console.log(areBothTrue(true, false));  // Output: false
 ```
 
-### 3. Using Logical OR (`||`)
+### 3. Using Logical OR \
 
 **Task**: Write a function named `isEitherTrue` that checks if at least one of the provided boolean values is `true`.
 
@@ -94,7 +94,7 @@ console.log(checkValues(false, true, false));  // Output: false
 ```
 
 
-# Conditionals - logic & syntax practice
+# Conditionals - Logic & Syntax Practice
 
 ### 1. Check if Number is Positive or Negative
 
@@ -114,7 +114,7 @@ checkSign(0);   // Output: Zero
 console.log(findLargest(1, 5, 3));  // Output: 5
 ```
 
-### 3. Check if Number is Even or Odd
+### 3. Check if a Number is Even or Odd
 
 **Task**: Write a function named `checkParity` that accepts a number and prints if it's even or odd.
 
