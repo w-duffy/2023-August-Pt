@@ -146,6 +146,7 @@ let longestWord = function(sentence) {
     // return `The longest word is: ${longestWord}.  The index is this: ${words.indexOf(longestWord)}`
 };
 
+//testing
 
 console.log(longestWord('where did everyone go')); // 'everyone' 2
 // console.log(longestWord('prefer simplicity over complexity')); // 'simplicity' 1
