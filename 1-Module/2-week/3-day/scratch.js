@@ -148,6 +148,8 @@ let longestWord = function(sentence) {
 
 //testing
 
+//an update
+
 console.log(longestWord('where did everyone go')); // 'everyone' 2
 // console.log(longestWord('prefer simplicity over complexity')); // 'simplicity' 1
 // console.log(longestWord('')); // ''
