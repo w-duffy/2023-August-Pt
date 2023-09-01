@@ -16,51 +16,54 @@ return the word modified in some way. The operations are:
 If the operation is invalid, return the word, unchanged.
 */
 function stringChanger(word, operation) {
-    // Your code here
-    // console.log("WORD", word)
-    // console.log("opertaion", operation)
-
+  // Your code here
+  // console.log("WORD", word)
+  // console.log("opertaion", operation)
+  /*
+Ernesto's Solution:
     if (operation === "capitalize") {
         return word.charAt(0).toUpperCase() + word.slice(1, word.length);
        }
+       */
 
-
-
+  /*
+Sean's Solution:
     // if (operation === "capitalize") {
     //     let firstChar = word.charAt(0).toUpperCase();
     //     let restOfWord = word.slice (1);
     //     return firstChar + restOfWord;
     //    }
+      */
 
+  /*
+     Brody's Solution:
     // if(operation === "capitalize"){
     //     //return word modified in some way
     // let firstLetter = word[0].toUpperCase();
     // let restOfWord = word.slice(1);
     // return firstLetter.concat(restOfWord);
-
     // }
-    if(operation === "uppercase"){
-        //return word modified in some way
-        // console.log("UPPER", word.toUpperCase)
-        return word.toUpperCase()
-        // return word.toUpperCase()
-    }
-    if(operation === "double"){
-        //return word modified in some way
-        // return word + word
-        return word.concat(word)
-
-    }
-    if(operation === "reverse"){
-        //return word modified in some way
-        // let splitArr = word.split("")
-        // // console.log(splitArr)
-        // let reversed = splitArr.reverse();
-        // console.log(reversed)
-        return word.split("").reverse().join("")
-
-    }    //return word modified in some way
-    return word
+         */
+  if (operation === "uppercase") {
+    //return word modified in some way
+    // console.log("UPPER", word.toUpperCase)
+    return word.toUpperCase();
+    // return word.toUpperCase()
+  }
+  if (operation === "double") {
+    //return word modified in some way
+    // return word + word
+    return word.concat(word);
+  }
+  if (operation === "reverse") {
+    //return word modified in some way
+    // let splitArr = word.split("")
+    // // console.log(splitArr)
+    // let reversed = splitArr.reverse();
+    // console.log(reversed)
+    return word.split("").reverse().join("");
+  } //return word modified in some way
+  return word;
 }
 
 // TESTS
