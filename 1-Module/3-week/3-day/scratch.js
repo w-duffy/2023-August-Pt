@@ -3,62 +3,62 @@
 //     return avg;
 //   };
 
-//   console.log("HERE")
+// //   console.log("HERE")
 
 
 
 
-//   // arrow function equivelant
-//   let averageArrow = (num1, num2) => {
-//     let avg = (num1 + num2) / 2;
-//     return avg;
+// //   // arrow function equivelant
+// //   let averageArrow = (num1, num2) => {
+// //     let avg = (num1 + num2) / 2;
+// //     return avg;
+// //   };
+
+// //   console.log("Here", averageArrow(3, 7));
+
+//   // arrow function with implicit return
+//   // let averageArrow = (num1, num2) => (num1 + num2) / 2;
+
+//   // console.log(averageArrow(3, 7));
+
+//   //keying into arr example
+//   // let arr = [1, "string", {}, averageArrow];
+
+//   // console.log(arr[0]);
+
+//   // keying into objects examples
+//   // let obj = {
+//   //   name: "Edward",
+//   //   lastName: "Felipe",
+//   // };
+
+//   // console.log(obj);
+
+//   // console.log(obj);
+
+
+//   let obj = {
+//     firstName: "Will",
+//     // lastName: "Duffy",
+//     // dog: "Lucky",
+//     // hobbies: ["coding", "hiking", "video games"],
+//     examp: {nestedKey: "nestedVal"},
 //   };
 
-//   console.log("Here", averageArrow(3, 7));
-
-  // arrow function with implicit return
-  // let averageArrow = (num1, num2) => (num1 + num2) / 2;
-
-  // console.log(averageArrow(3, 7));
-
-  //keying into arr example
-  // let arr = [1, "string", {}, averageArrow];
-
-  // console.log(arr[0]);
-
-  // keying into objects examples
-  // let obj = {
-  //   name: "Edward",
-  //   lastName: "Felipe",
-  // };
-
-  // console.log(obj);
-
-  // console.log(obj);
 
 
-  let obj = {
-    firstName: "Will",
-    // lastName: "Duffy",
-    // dog: "Lucky",
-    // hobbies: ["coding", "hiking", "video games"],
-    examp: {nestedKey: "nestedVal"},
-  };
+// //   console.log(obj.firstName)
+// //   console.log(obj[firstName])
+
+//   let firstName = "test"
 
 
+// console.log("1: ", obj[firstName])
+// console.log("1: ", obj["test"])
 
-//   console.log(obj.firstName)
-//   console.log(obj[firstName])
-
-  let firstName = "test"
-
-
-console.log("1: ", obj[firstName])
-console.log("1: ", obj["test"])
-
-console.log("2: ", obj.firstName)
-console.log("2: ", obj."test")
-//   console.log(obj)
+// console.log("2: ", obj.firstName)
+// console.log("2: ", obj."test")
+// //   console.log(obj)
 
 
 
