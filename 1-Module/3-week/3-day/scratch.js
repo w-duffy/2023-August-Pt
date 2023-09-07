@@ -233,20 +233,3 @@ console.log("2: ", obj."test")
   // for (let key in person) {
   //   console.log(key);
   // }
-  // person.printName("Will")
-  // person.newFuncyFunc = (name) =>{
-  //   console.log("YO YO", name)
-  // }
-  // person.newFuncyFunc("will")
-
-  // person["yeetFuncyFunc"] = function cool(name) {
-  //   console.log("YEET", name)
-  // }
-
-  // person.yeetFuncyFunc("will")
-  // person[1] = "TEST"
-
-  // for (let key in person) {
-  //   console.log(typeof key, key);
-  // }
-  // console.log(person)
