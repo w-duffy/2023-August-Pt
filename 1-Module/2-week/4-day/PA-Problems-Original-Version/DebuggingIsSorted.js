@@ -7,6 +7,7 @@ sorted lowest to highest. The function should return true if the array is in ord
 Unfortunately, the code is not working correctly. Help them fix it!
 */
 
+
 function isSorted(nums) {
 
     // Loop through each number
