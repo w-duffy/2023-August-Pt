@@ -14,7 +14,7 @@ const obj = {
     green: "hexagon"
 }
 
-// Write your code here.
+//  your code here.
 
 
 console.log(arrRest);           // [1, "two", "3"]
