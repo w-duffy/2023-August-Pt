@@ -138,3 +138,24 @@ console.log(copyObj)
 // let { firstName, lastName, ...obj } = person;
 
 // console.log(firstName, lastName, obj);
+
+
+function multiplesOfSeven(num) {
+  let arr = [];
+  for (let i = 1; i <= num; i++) {
+      if (i % 7 === 0) {
+          arr.push(i);
+      }
+  }
+  return arr;
+}
+
+// Expected return values
+console.log(multiplesOfSeven(85));
+// [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84]
+console.log(multiplesOfSeven(15));
+// [ 7, 14 ]
+console.log(multiplesOfSeven(7));
+// [ 7 ]
+console.log(multiplesOfSeven(1));
+// []

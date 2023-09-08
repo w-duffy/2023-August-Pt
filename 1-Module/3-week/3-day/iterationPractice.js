@@ -27,67 +27,67 @@
 //--------------------------------------------------------------------------------------------
 //Writing object methods
 
-// const obj = {
-//     Jacky: "Honda",
-//     Ramon: "Kia",
-//     Lexi: "Mercedes",
-//     Eli: "Honda",
-//     Bradley: "Honda",
-//     Cecily: "BMW",
-//     miles: 3
+const obj = {
+    Jacky: "Honda",
+    Ramon: "Kia",
+    Lexi: "Mercedes",
+    Eli: "Honda",
+    Bradley: "Honda",
+    Cecily: "BMW",
+    miles: 3
 
-// }
+}
 
-// // Write your solution here.
-// obj.printUniqueValues = () => {
+// Write your solution here.
+obj.printUniqueValues = () => {
 
-// let arr = [];
+let arr = [];
 
-// for (let key in obj){
-//   let value = obj[key]
+for (let key in obj){
+  let value = obj[key]
 
-//   if(!arr.includes(value) && typeof value === "string"){
+  if(!arr.includes(value) && typeof value === "string"){
 
-//     arr.push(value)
-//   }
-// }
-// console.log(arr)
+    arr.push(value)
+  }
+}
+console.log(arr.join(" "))
 
-// }
+}
 
-// obj.printUniqueValues();               // Honda Kia Mercedes BMW
+obj.printUniqueValues();               // Honda Kia Mercedes BMW
 
 
 
 //--------------------------------------------------------------------------------------------
 //refactoring iteration
 
-const obj = {
-    a: "get",
-    b: "all",
-    c: "of",
-    d: "the",
-    e: "keys"
-}
+// const obj = {
+//     a: "get",
+//     b: "all",
+//     c: "of",
+//     d: "the",
+//     e: "keys"
+// }
 
-const printValues = obj => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    for(let key of Object.keys(obj)) {
-        if(vowels.indexOf(key) >= 0) {
-            console.log(obj[key]);
-        }
-    }
-}
+// const printValues = obj => {
+//     const vowels = ['a', 'e', 'i', 'o', 'u'];
+//     for(let key of Object.keys(obj)) {
+//         if(vowels.indexOf(key) >= 0) {
+//             console.log(obj[key]);
+//         }
+//     }
+// }
 
-const printValuesRefactored = obj => {
-    // Write your solution here.
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    for(let key in obj) {
-        if(vowels.indexOf(key) >= 0) {
-            console.log(obj[key]);
-        }
-    }
-}
+// const printValuesRefactored = obj => {
+//     // Write your solution here.
+//     const vowels = ['a', 'e', 'i', 'o', 'u'];
+//     for(let key in obj) {
+//         if(vowels.indexOf(key) >= 0) {
+//             console.log(obj[key]);
+//         }
+//     }
+// }
 
-printValues(obj);               // get values  -- prints "get" "keys"
-printValuesRefactored(obj);     // get values -- prints "get" "keys"
+// printValues(obj);               // get values  -- prints "get" "keys"
+// printValuesRefactored(obj);     // get values -- prints "get" "keys"
