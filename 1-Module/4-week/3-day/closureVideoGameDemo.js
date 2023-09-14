@@ -30,10 +30,12 @@ function createPlayer(name) {
     };
   }
 
+
   function createDragon(name) {
     let hp = 100;
 
     return {
+      firstName: "Will",
       takeDamage: function(amount) {
         hp -= amount;
         if (hp <= 0) {
@@ -48,10 +50,16 @@ function createPlayer(name) {
     };
   }
 
+
+
+
+
+
+
   const tarnished = createPlayer("Tarnished");
   const eldenBeast = createDragon("The Elden Beast");
 
-  console.log("---- The Battle Begins ----"); // The comments below arne't the prints, instead they're descriptions
+  // console.log("---- The Battle Begins ----"); // The comments below are not the prints, instead they're descriptions
   tarnished.earnPoints(50);  // Tarnished earns 50 points.
   tarnished.spendPoints(30); // Tarnished spends 30 points to buy a health potion.
   tarnished.attack(eldenBeast);  // Tarnished attacks The Elden Beast.

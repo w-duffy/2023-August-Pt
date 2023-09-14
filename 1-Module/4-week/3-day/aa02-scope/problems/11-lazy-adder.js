@@ -22,7 +22,44 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   fat-arrow function
 ***********************************************************************/
 
-// Your code here 
+// Your code here
+//Max's solution
+// let lazyAdder = firstNum => secondNum => thirdNum => firstNum + secondNum + thirdNum;
+
+// let anonFunc = singleParam => "hi"
+
+// let lazyAdder = (firstNum) =>{
+//   //returns a function
+
+
+//   // console.log("1", firstNum)
+//   return (secondNum) =>{
+//     //innerfunc returns a func
+//     // console.log("2", secondNum)
+//     //mostnestedFun return a number
+//     return (thirdNum) =>{
+//       // console.log("3", thirdNum)
+//       //need logic in here
+//       return firstNum + secondNum + thirdNum
+//     }
+//   }
+// }
+
+
+let firstAdd = lazyAdder(1);
+let secondAdd2 = firstAdd(6);
+let sum2 = secondAdd2(10);
+console.log(sum2)
+
+let secondAdd = firstAdd(2);
+let sum = secondAdd(3);
+console.log(sum); // prints 6
+
+
+let func1 = lazyAdder(10);
+let func2 = func1(20);
+let total = func2(3);
+console.log(total); // prints 33
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
