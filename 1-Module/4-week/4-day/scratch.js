@@ -15,23 +15,22 @@ Bonus: Try solving this without modifying the original array && its elements sho
 
 weapons = [
     { weapon: "Moonlight Greatsword", battles: 600, currDamage: 150 },
-    { weapon: "Lunar Scythe", battles: 480, currDamage: 130 },
+    { weapon: "Lunar Scythe", battles: 480, currDamage: 100 },
     { weapon: "Solar Spear", battles: 520, currDamage: 140 },
     { weapon: "Starlight Bow", battles: 450, currDamage: 120 },
     { weapon: "Galactic Dagger", battles: 510, currDamage: 100 },
   ];
 
   console.log(boostedWeapons(weapons));
-
   //PRINTS:
   // [
-  //   { weapon: 'Lunar Scythe', bonusDamage: 156 },
+  //   { weapon: 'Lunar Scythe', bonusDamage: 120 },
   //   { weapon: 'Starlight Bow', bonusDamage: 144 }
   // ]
 
 //   BONUS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//     Original Array Not Modified
-  //   console.log(weapons) // Prints:
+//   Original Array Not Modified
+//   console.log(weapons) // PRINTS:
 //  [
 //     { weapon: "Moonlight Greatsword", battles: 600, currDamage: 150 },
 //     { weapon: "Lunar Scythe", battles: 480, currDamage: 130 },
