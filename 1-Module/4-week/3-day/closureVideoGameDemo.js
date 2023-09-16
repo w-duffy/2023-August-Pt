@@ -31,11 +31,12 @@ function createPlayer(name) {
   }
 
 
+
   function createDragon(name) {
     let hp = 100;
 
     return {
-      firstName: "Will",
+      firstName: "test",
       takeDamage: function(amount) {
         hp -= amount;
         if (hp <= 0) {
@@ -50,6 +51,10 @@ function createPlayer(name) {
     };
   }
 
+
+  // let theMonster = createDragon("PUFF")
+  // console.log("1:", theMonster.getHealth)
+  // console.log("2:", theMonster.getHealth())
 
 
 

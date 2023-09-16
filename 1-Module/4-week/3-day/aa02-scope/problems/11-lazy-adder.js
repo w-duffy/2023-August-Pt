@@ -1,6 +1,6 @@
 /***********************************************************************
 Write a function named: lazyAdder(firstNum). The lazyAdder function will
-accept a number and return a function. When the function returned by lazyAdder
+accept a number and returns a function. When the function returned by lazyAdder
 is invoked it will again accept a number, (secondNum), and then return a function.
 When the last mentioned function is invoked with a number, (thirdNum), it will
 FINALLY return a number. See below for examples!
@@ -21,6 +21,52 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 - Explain, but don't code, how you would turn your solution into a one-line
   fat-arrow function
 ***********************************************************************/
+//Jacob's solution
+
+// const lazyAdder = (firstNum) => (secondNum) => (thirdNum) => firstNum + secondNum + thirdNum
+
+
+let lazyAdder = (firstNum) =>{
+
+// .map(el=>{
+
+// })
+  return secondNum => {
+
+
+    return (thirdNum) => {
+    //   console.log("1: ", firstNum)
+    //   console.log("here", secondNum)
+    // console.log("2", thirdNum)
+    //return number
+    return firstNum + secondNum + thirdNum
+
+  }
+}
+
+
+}
+
+
+
+let firstAdd = lazyAdder(1);
+
+let secondAdd = firstAdd(2);
+let sum = secondAdd(3);
+console.log(sum); // prints 6
+
+
+let func1 = lazyAdder(10);
+let func2 = func1(20);
+let total = func2(3);
+console.log(total); // prints 33
+
+
+
+
+
+
+
 
 // Your code here
 //Max's solution
@@ -46,20 +92,6 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 // }
 
 
-let firstAdd = lazyAdder(1);
-let secondAdd2 = firstAdd(6);
-let sum2 = secondAdd2(10);
-console.log(sum2)
-
-let secondAdd = firstAdd(2);
-let sum = secondAdd(3);
-console.log(sum); // prints 6
-
-
-let func1 = lazyAdder(10);
-let func2 = func1(20);
-let total = func2(3);
-console.log(total); // prints 33
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

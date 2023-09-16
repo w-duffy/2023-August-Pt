@@ -200,8 +200,7 @@
 
 
 
-let arr = [1,2,3]
-arr.toReversed()
+
 // let name = "will"
 // let name2 = "will"
 // name2 = "tom"
@@ -247,11 +246,23 @@ arr.toReversed()
 // // console.log(addingTwo()); // => 6
 
 
-if( result === 10){
-  //do xyz
-  console.log("wow you're adding a lot")
-}
+// if( result === 10){
+//   //do xyz
+//   console.log("wow you're adding a lot")
+// }
 
 // let addingTwo2 = addTwo(0);
 // console.log(addingTwo2()); // => 2
 // console.log(addingTwo()); // => 8
+
+
+let array = [1,2,3]
+
+let myMutator = (param) =>{
+  param.push(5)
+  console.log(param)
+}
+
+console.log("Console.logging :", myMutator(array))
+
+myMutator(array) // answer print [1,2,3,5]
