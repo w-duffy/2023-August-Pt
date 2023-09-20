@@ -12,19 +12,17 @@ range(7, 6); // []
 
 
 function range(start, end) {
-
-  let arr = []
+  // let arr = []
   //base case
-  if(end <= start) return arr
-
-  arr.push(start)
-  // console.log(arr)
-  // start+1
-  // return arr.concat(range(start+1, end))
-  // recursive step
+  if (start >= end) return []
+// arr.push(start)
+// recursive step
+// (start + 1)
 //recursive case/call
-return [start, ...range(start+1, end)]
-// return [...arr, ...range(start+1, end)]
+// return arr.concat(range(start + 1, end))
+// console.log("HERE", [...[1,2], ...[]])
+return [start, ...range(start + 1, end)]
+
 }
 
 
