@@ -19,12 +19,12 @@ function range(start, end) {
 
   arr.push(start)
   // console.log(arr)
-  // recursive step
   // start+1
-// return arr.concat(range(start+1, end))
+  // return arr.concat(range(start+1, end))
+  // recursive step
+//recursive case/call
 return [start, ...range(start+1, end)]
 // return [...arr, ...range(start+1, end)]
-  //recursive case/call
 }
 
 
