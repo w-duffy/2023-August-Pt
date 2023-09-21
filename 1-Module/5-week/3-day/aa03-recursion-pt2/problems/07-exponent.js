@@ -23,17 +23,22 @@ exponent(5, 5); // 3125
 function exponent(num, power) {
 
     if (power < 0) {
+        console.log("1", power)
         return (1 / exponent(num, Math.abs(power)));
     }
 
     if (power === 1) {
+        console.log("2", power)
         return num
     }
 
+    console.log("3", power)
     return num * exponent(num, power - 1);
-  
-}
 
+}
+// exponent(3, 2); // 9
+console.log(exponent(2, -2)); // 1/4 (or 0.25)
+// exponent(5, 5); // 3125
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
     module.exports = exponent;

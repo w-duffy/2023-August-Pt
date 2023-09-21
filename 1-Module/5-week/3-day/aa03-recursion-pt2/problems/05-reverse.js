@@ -16,14 +16,13 @@ reverse(""); // ""
 function reverse(str) {
   // Your code here
   //base case
-  if(!str.length) return str
+  if(!str.length) return "";
 
-  //recursive case -- when we should make the recursive call
-  //recursive step to get us closer to that base case
-  let sliced = str.slice(1)
-  console.log("1", sliced)
-  console.log("2", str[0])
-  return reverse(sliced) + str[0]
+
+   //recursive case
+    //recursive step
+    return  reverse(str.slice(1)) + str[0]
+
 
 }
 // console.log(reverse("house")); // "esuoh"
