@@ -21,7 +21,10 @@ function range(start, end) {
 //recursive case/call
 // return arr.concat(range(start + 1, end))
 // console.log("HERE", [...[1,2], ...[]])
+
 return [start, ...range(start + 1, end)]
+
+// return [...arr, ...range(start + 1, end)]
 
 }
 

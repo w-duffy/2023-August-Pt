@@ -13,6 +13,8 @@ sumToN(-8)  // returns null
 // let arr = [1,2,3]
 let arr = []
 // console.log("this works:", 10 + null)
+
+// let mar = `something something ${arr}`
 function sumToN(n) {
   // if(n <= 0) return null;
 
@@ -32,9 +34,9 @@ return sum
 
 // console.log(sumToN(3)) // returns 6 => 0 + 1 + 2 + 3
 console.log(sumToN(5)) // returns 15 => 1 + 2 + 3 + 4 + 5
-// console.log(sumToN(1))  // returns 1 === 1
-// console.log(sumToN(9))  // returns 45 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9
-// console.log(sumToN(-8))  // returns null
+console.log(sumToN(1))  // returns 1 === 1
+console.log(sumToN(9))  // returns 45 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9
+console.log(sumToN(-8))  // returns null
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

@@ -35,6 +35,16 @@ const miahsCats = obj => {
     //!!END
 }
 
+obj1 = {"Finn": "Smart lil boy, maximum cuTe", "Jake": "Not a dog, still cUte"}
+console.log("1", miahsCats(obj1)) // 2
+
+obj2 = {"CuteFace": "Has an adoRable face, loves snuggles", "Baby": "Very chonky lady, adorable fluffy face"}
+console.log("2", miahsCats(obj2)) // 3
+
+obj3 = {"Princess": "So much sass, cute AND fluffy", "adorable-boy": "Cute and funny"}
+console.log("3", miahsCats(obj3)) // 3
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try{
     module.exports = miahsCats;

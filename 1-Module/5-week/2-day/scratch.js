@@ -7,32 +7,42 @@
 //     if (num > 0) {
 
 //         // recursive step == calling function with x -1
-//         recurse(num - 1);
+//         recurse(num - 1); //recurse(8)
 //     };
 
 //   };
 
 //   recurse(10)
 
-// let arr = [1,2,3]
+
 
 
 
 
 // let lastName = 'Duffy'
 // let age = 100
+// // let sent = "Hi" + " " + lastName + " " + age
 
 // let myFunc = () =>{
-//     // console.log("test")
-//     return "IS THIS REALLY WORKING"
+        // console.log("test")
+    // return "IS THIS REALLY WORKING"
 // }
 // let someVar = myFunc()
-// // let sent = someVar + " " + lastName + " " + age
 // // `Hi my name is will sentence is cool`
 // // "Hi my name is will sentence is cool"
 // // console.log(sent)
-// let interpolatedString = `Hello, my name is ${someVar} ${lastName}
-// and I am ${age} years old`
+// let string = "some string"
+// let intString = `some string`
+// let interpolatedString = `Hello, my name is ${myFunc()} and I am ${age} years old`
+
+// console.log(interpolatedString)
+
+
+
+
+
+
+
 
 // // console.log(interpolatedString)
 // function foo() {
@@ -96,13 +106,15 @@
 //   recurse(2);
 
 
-  function foo() {
-    return 2 + bar();
-  }
 
   function bar() {
     return 6 + baz();
   }
+
+  function foo() {
+    return 2 + bar();
+  }
+
 
   function baz() {
     return 3;
