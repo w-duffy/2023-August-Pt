@@ -8,7 +8,7 @@ it should return null.
 */
 
 // let avgVal = (arr) =>{
-//   //base case
+
 //   if(!arr.length) return null
 //   if(arr.length === 1) return arr[0]
 
