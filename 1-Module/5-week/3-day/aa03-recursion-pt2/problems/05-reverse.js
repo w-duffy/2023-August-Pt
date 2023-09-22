@@ -25,12 +25,13 @@ function reverse(str) {
 
 
 }
-// console.log(reverse("house")); // "esuoh"
+
+console.log(reverse("house")); // "esuoh"
 console.log(reverse("dog")); // "god"
-// console.log(reverse("atom")); // "mota"
-// console.log(reverse("q")); // "q"
-// console.log(reverse("id")); // "di"
-// console.log(reverse("")); // ""
+console.log(reverse("atom")); // "mota"
+console.log(reverse("q")); // "q"
+console.log(reverse("id")); // "di"
+console.log(reverse("")); // ""
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
