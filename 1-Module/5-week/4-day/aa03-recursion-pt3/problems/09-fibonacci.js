@@ -21,14 +21,14 @@ fibonacci(10); // 55
 
 
 // console.log("here")
-// function fibonacci(n) {
-//   // console.log("here 2")
-// //bc
-// if(n <= 2 && n !== 0) return 1
+function fibonacci(n) {
+  // console.log("here 2")
+//bc
+if(n <= 2 && n !== 0) return 1
 
-// return fibonacci(n - 1) + fibonacci(n - 2)
+return fibonacci(n - 1) + fibonacci(n - 2)
 
-// }
+}
 
 // console.log(fibonacci(1)); // 1
 // console.log(fibonacci(2)); // 1
@@ -41,32 +41,17 @@ fibonacci(10); // 55
 //Advanced Memoization approach -- This is a faster version of fib,
 //but this solution is outside of scope for class
 function fibonacci(n, memo = {}) {
-  // If value is in memo, return it
+
   if (n in memo) return memo[n];
 
   // Base cases
   if (n === 1 || n === 2) return 1;
 
-  // Store value in memo before returning
+ 
   memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
   return memo[n];
 }
-// console.log(fibonacci(100)); // 354224848179262000000
-
-
-// console.log(fibonacci(1)); // 1
-// console.log(fibonacci(2)); // 1
-// console.log(fibonacci(3)); // 2
-// console.log(fibonacci(4)); // 3
-
-
-                  //fib(1) => 1  //fib(2) => 1
-
-//fib(2) => 1   //fib(3) => fib(1) + fib(2) === 2
-
-// fib(2) + fib(3)  ==> 1 + 2
-
-//fib(4) => fib(2) + fib(3)
+console.log(fibonacci(100)); // 354,224,848,179,262,000,000
 
 
 

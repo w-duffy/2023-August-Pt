@@ -37,22 +37,6 @@ function isSorted(arr) {
   }
 }
 
-//michelle's
-function isSorted(arr) {
-  // Your code here
-  let i = 0
-  if(i === 1){
-    return true;
-  }
-  if (arr[i] < arr[i + 1]){
-    return true;
-  }
-  else if(arr[i] > arr[i + 1]){
-    return false;
-  }
-  return isSorted(arr.slice(i + 1))
-}
-
 
 //Jacob's
 function isSorted(arr, index = 0) {
@@ -85,7 +69,7 @@ function isSorted(arr) {
 }
 
 
-// Jacob v2
+// Jacob v2 using default params 
 
 function isSorted(arr, index = 0) {
   if (index >= arr.length - 1) {
