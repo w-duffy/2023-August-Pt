@@ -39,7 +39,7 @@ return fibonacci(n - 1) + fibonacci(n - 2)
 //OPTIONAL BONUS CONTENT BELOW:---------------------------------------------------------------------------
 
 //Advanced Memoization approach -- This is a faster version of fib,
-//but this solution is outside of scope for class
+//but this solution is outside of scope for class.  Please skip unless you're interested.
 function fibonacci(n, memo = {}) {
 
   if (n in memo) return memo[n];
@@ -47,11 +47,11 @@ function fibonacci(n, memo = {}) {
   // Base cases
   if (n === 1 || n === 2) return 1;
 
- 
+
   memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
   return memo[n];
 }
-console.log(fibonacci(100)); // 354,224,848,179,262,000,000
+console.log(fibonacci(100)); // 354224848179262000000
 
 
 
