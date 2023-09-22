@@ -51,8 +51,3 @@ flatten([1, [2, [3]]])
     |
     |-----> Result: [1, 2, 3]
 ```
-
-**Notes**:
-- Every recursive function call creates a new frame on the call stack. This can lead to a stack overflow error if the recursion goes too deep.
-- For this algorithm, the depth of recursion is directly related to the depth of nesting in the input array.
-- If there's a possibility of very deeply nested arrays, you might run into a "Maximum call stack size exceeded" error.
