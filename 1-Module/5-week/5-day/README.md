@@ -157,7 +157,12 @@ Everything else is Truthy;
 ## Try working through Whiteboarding Problem Closure
 
 # For the rest of class and weekend:
-- Work on Homework for Monday
+- Work on Week 5 "Homework for Monday"
+
 - Catch up and finish problems you haven't completed from any week.
-- Allocate time to problems and concepts we've learned that you struggled with
-(closures, pojos, advanced arrays, ext.)
+
+- Allocate time to problems and concepts we've learned that you struggled with (closures, pojos, advanced arrays, ext.)
+
+- You may encounter a "debugging" type question on your PA/Assessment. My approach was to use `console.log's` to debug these problems and find the correct answer like we've been doing in class.
+
+- However, if you believe the debugger tool would be beneficial, consider installing it today. Please be aware that there's an installation process, and there's a learning curve associated with the debugger. It might be more efficient to allocate your time practicing recursion problems and using `console.log's`.
