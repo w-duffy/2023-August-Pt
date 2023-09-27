@@ -28,14 +28,30 @@ printAllFalsy(2);
 
 ***********************************************************************/
 
-const TRUTHY_FALSEY = [true, false, 1, 0, "hello", "", "world", null, undefined, NaN];
+const TRUTHY_FALSEY = [true, [], false, 1, 0, "hello", "",
+"world", null, undefined, NaN];
 
+let arr = []
 function printAllFalsy(index) {
+
+    for (let i = 0; i < TRUTHY_FALSEY.length; i++){
+        let el = TRUTHY_FALSEY[i]
+        // if(!arr.length){
+        if(!el){
+        // if(!arr){
+            console.log(el)
+        }
+    }
 
 }
 
 
 printAllFalsy(0);
+
+
+
+
+
 // false
 // 0
 // "" //(looks blank on vscode)
@@ -43,7 +59,7 @@ printAllFalsy(0);
 // undefined
 // NaN
 
-printAllFalsy(2);
+// printAllFalsy(2);
 // 0
 // "" //(looks blank on vscode)
 // null

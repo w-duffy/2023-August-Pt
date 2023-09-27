@@ -21,40 +21,19 @@ setSecondsTimeoutArgs(function(arg1, arg2) {
     console.log(arg1 + '-' + arg2);
 }, 0.7, 'hello', 'world'); // should print 'hello-world' after 700ms
 ***********************************************************************/
-// let someFuncToRun = () => {
-//   console.log("run me")
+
+
+// function setSecondsTimeoutArgs(cb, delayInSeconds, ...args) {
+//   // Your code here
+
+  //setTimeout(cb, delayInSeconds * 1000, ...args)
+//   // console.log(timeoutReturnVal)
+
+  // setTimeout(() => {
+  //   cb(...args)
+  // }, delayInSeconds * 1000)
+
 // }
-
-// //call or invoke a
-// // someFuncToRun()
-
-// // setTimeout(() => {
-// //   someFuncToRun()
-// // }, 500)
-
-
-// let anotherFuncToRun = () =>{
-//   console.log("run me too")
-// }
-
-// let runBothFuncs = () =>{
-//   someFuncToRun()
-//   anotherFuncToRun()
-// }
-// setTimeout(runBothFuncs, 500)
-
-
-function setSecondsTimeoutArgs(cb, delayInSeconds, ...args) {
-  // Your code here
-
-  // setTimeout(cb, delayInSeconds * 1000, ...args)
-  // console.log(timeoutReturnVal)
-
-  setTimeout(() => {
-    cb(...args)
-  }, delayInSeconds * 1000)
-
-}
 
 // function printSum(num1, num2, num3) {
 //   console.log(num1 + num2 + num3);

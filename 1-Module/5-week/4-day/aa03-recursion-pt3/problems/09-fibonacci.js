@@ -21,7 +21,7 @@ fibonacci(10); // 55
 
 
 // console.log("here")
-function fibonacci(n) {
+let fibonacci = (n) => {
   // console.log("here 2")
 //bc
 if(n <= 2 && n !== 0) return 1
@@ -33,25 +33,40 @@ return fibonacci(n - 1) + fibonacci(n - 2)
 // console.log(fibonacci(1)); // 1
 // console.log(fibonacci(2)); // 1
 // console.log(fibonacci(3)); // 2
-// console.log(fibonacci(4)); // 3
-// console.log(fibonacci(100)); // 55
+
+console.log("welcome message on my website")
+
+setTimeout(() => {
+  console.log("LOADING LARGE IMAGE", fibonacci(42));
+}, 1000)
+// console.log("LOADING LARGE IMAGE", fibonacci(50)); // 3
+console.log("important stuff on my website")
+
+
+
+// setTimeout(() => {
+//   console.log('2: Async SetTimeOut Print');
+// }, 0)
+
+// console.log("3: ", fibonacci(40));
+// console.log("4: Sync Print hi")
 
 //OPTIONAL BONUS CONTENT BELOW:---------------------------------------------------------------------------
 
 //Advanced Memoization approach -- This is a faster version of fib,
 //but this solution is outside of scope for class.  Please skip unless you're interested.
-function fibonacci(n, memo = {}) {
+// function fibonacci(n, memo = {}) {
 
-  if (n in memo) return memo[n];
+//   if (n in memo) return memo[n];
 
-  // Base cases
-  if (n === 1 || n === 2) return 1;
+//   // Base cases
+//   if (n === 1 || n === 2) return 1;
 
 
-  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
-  return memo[n];
-}
-console.log(fibonacci(100)); // 354224848179262000000
+//   memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+//   return memo[n];
+// }
+// console.log(fibonacci(100)); // 354224848179262000000
 
 
 
