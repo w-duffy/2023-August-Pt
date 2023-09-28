@@ -38,7 +38,7 @@ function howManyTimes(words, target, counter=0) {
 
 
 
-
+//scratch work below from EST/PST/student contributions--------------------------
 
 
 
@@ -55,25 +55,25 @@ function howManyTimes(words, target, counter=0) {
 
 
 
-  //     //bc
-  if(!words.length) return counter
-  // console.log("WORDS", words)
-  let shifted = words.shift()
+  // //     //bc
+  // if(!words.length) return counter
+  // // console.log("WORDS", words)
+  // let shifted = words.shift()
 
-  // for(let i = 1; i < words.length; i++){
-    words.forEach(el =>{
-      if (shifted + el === target){
-        counter++
-      }
-    })
-  // for(let i = 0; i < words.length; i++){
-  //   //check to see if two elements === target -- and if so increase counter by 1
-  //   // if(words[0] + words[i] === target){
-  //   if(shifted + words[i] === target){
-  //     counter++
-  //   }
-  // }
-  //rs
-   //rc
-  return howManyTimes(words, target, counter)
-  // return howManyTimes(words.slice(1), target, counter)
+  // // for(let i = 1; i < words.length; i++){
+  //   words.forEach(el =>{
+  //     if (shifted + el === target){
+  //       counter++
+  //     }
+  //   })
+  // // for(let i = 0; i < words.length; i++){
+  // //   //check to see if two elements === target -- and if so increase counter by 1
+  // //   // if(words[0] + words[i] === target){
+  // //   if(shifted + words[i] === target){
+  // //     counter++
+  // //   }
+  // // }
+  // //rs
+  //  //rc
+  // return howManyTimes(words, target, counter)
+  // // return howManyTimes(words.slice(1), target, counter)
