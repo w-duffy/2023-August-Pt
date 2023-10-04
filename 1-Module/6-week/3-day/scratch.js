@@ -1,5 +1,5 @@
 // write a function called arrMutator that takes in an array and returns a func.
-// the returned func take in a word to add to each el in the original array.
+// the returned func takes in a word to add to each el in the original array.
 // the returned func MUST mutate the original array
 
 function arrMutator(arr) {
