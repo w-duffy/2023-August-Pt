@@ -85,3 +85,95 @@ console.log(newUserInstance1.sayHi())
 //         console.log(`${this.name} now wears jersey #${this.number}`);
 //     }
 // }
+
+
+//make an object that holds all the ingredients in a pbj
+
+
+class Sandwich {
+  constructor(bread, middles = [], spreads = []) {
+    this.bread = bread;
+    this.middles = middles;
+    this.spreads = spreads;
+  }
+
+  addSpread(spread) {
+    this.spreads.push(spread);
+  }
+
+  addMiddle(middle) {
+    this.middles.push(middle)
+  }
+
+  readIngredients() {
+
+    let ingredients = ""
+    let condiments = '';
+
+    for (let middle of this.middles) {
+      ingredients += ` ${middle} `
+    }
+    for (let spread of this.spreads) {
+      condiments += ` ${spread} `
+    }
+    // console.log(ingredients)
+    console.log(`The Sandwich uses ${this.bread} bread and has ${ingredients} for middle and has ${condiments}`)
+  }
+
+
+}
+
+
+
+let pbj = new Sandwich('white')
+let italianSandwich = new Sandwich('white')
+
+
+pbj.addSpread('peanutbutter')
+pbj.addSpread('jelly')
+
+italianSandwich.addSpread('mayo')
+italianSandwich.addMiddle('pepperoni');
+italianSandwich.addMiddle('ham')
+
+pbj.readIngredients()
+// italianSandwich.readIngredients()
+
+// console.log(pbj)
+// console.log(italianSandwich, "this is my italian")
+
+
+
+class Sub extends Sandwich {
+  constructor(bread, middle, spread, topping, veggie) {
+    super(bread, middle, spread)
+    this.topping = topping;
+    this.veggie = veggie;
+  }
+}
+
+// class GluttenFreeSandwich extends Sandwich {
+//     constructor(bread, middle, spread, price){
+//         super(bread, middle, spread)
+//         this.price = price || 50
+//     }
+// }
+
+
+// let mygluttonfreeSandwich = new GluttenFreeSandwich("lettuce", "chicken", "ketchup", 30)
+
+// // console.log(mygluttonfreeSandwich)
+
+// // let hamSandwich = new Sandwich('bread', 'ham', 'mustard')
+// let chickenTenderSub = new Sub('wheat', 'Chicken', 'mayo', 'bacon', 'onion')
+
+
+// chickenTenderSub.readIngredients();
+
+// console.log(chickenTenderSub)
+
+
+
+// // console.log(hamSandwich)
+// // console.log(pbj)
+// // console.log(turkeySandwich)
