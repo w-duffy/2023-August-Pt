@@ -79,5 +79,6 @@ describe ('User class', function () {
 <br/>
 
 ## For Homework before Class on Wednesday:
-- Please complete the reading under "Homework for Thursday".
-- We will be working through the TDD Style Project all day on Wednesday
+- Please complete the 1 reading under "Homework for Thursday" && Complete The Custom Error Types" reading under Friday -- we will do the Error Types Practice from the HW in class tomorrow.
+
+- We will look at custom error types and work through the TDD Style Project all day on Wednesday
