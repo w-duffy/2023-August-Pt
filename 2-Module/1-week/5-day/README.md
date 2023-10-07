@@ -5,7 +5,7 @@
 ## Work on Employee Manager Practice
 - Skip Phase 4 and 5.  These phases are considered Bonus
 
-### If you finish the above practices, try resolving them only using the Test Specs
+### If you finish the above practices, try solving them only using the Test Specs
 
 ---
 
