@@ -39,18 +39,16 @@ const Actor = require("../classes/actor.js");
 describe("What's happening here", function() {
     it("is similar to how we've tested our files locally with node", function() {
 
-
     expect(1+1).to.equal(2) //if I console.log(1+1) I'd expect to see 2
-
 
     let name = "Will"
     expect(name).to.equal("Will") //if I console.log(name) I'd expect to see "Will"
 
-
     let addOne = (num) => num + 1;
     expect(addOne(1)).to.equal(2); //if I console.log(addOne(1)) I'd expect to see 2
-})
-})
+
+    });
+});
 
 
 // this "describe" blocks holds our tests for the Movie class
@@ -127,7 +125,7 @@ describe("Horror class", function() {
         expect(cabinInTheWoods.scareLevel).to.equal(5);
         expect(cabinInTheWoods.addScare()).to.be.undefined //When is a function's return value undefined?
         expect(cabinInTheWoods.scareLevel).to.equal(6);
-    })
+    });
 });
 
 /* The rest of the tests don't have many hints.  See if you can try and understand what's going on.
