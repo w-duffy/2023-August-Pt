@@ -1,12 +1,30 @@
+/*
+This Practice is completely optional. We're not expected to be able to code off of test specs until later next week.
+Therefore, this practice is completely optional and solely intended to provide
+extra content for student's looking for more practice.
+
+Furthermore, I recommend completing the Dragons project, Context problems 1-3,
+and the Employee project phases 1-3 before working on the below.
+If you can get through those practices already then you're in great shape!
+
+Class syntax is new so don't shy away from using this week's projects as
+a resource to help you work through this practice should you decide to attempt it.
+
+Throughout this practice you'll see comments that are intended to help clarify what's happening,
+and point out material and concepts we've seen this week.
+
+With all of that being said, don't forget to have fun!
+*/
+
 const { expect } = require("chai");
 
-/* Start here:
-In lines 6-8, We're importing all of the Classes so that we can use them in the below tests
-A class is a blueprint that defines the variables (often called attributes or properties)
-and the methods (functions) that are common to all objects of a certain kind.
 
-Hint: Use the paths provided in the require() calls to determine your file names and structure
-Hint: The way our classes are being imported is how they'll have to be exported.
+/* Start here:
+In lines 30-34, We're importing all of the Classes so that we can use them in the below tests
+
+Hint 1: Use the paths provided in the require() calls to determine your file names and structure
+Hint 2: The way our classes are being imported is how they'll have to be exported.
+
 */
 
 const Movie = require("../classes/movie.js");
@@ -15,15 +33,37 @@ const Comedy = require("../classes/comedy.js");
 const {Action} = require("../classes/action.js");
 const Actor = require("../classes/actor.js");
 
-// The "describe" blocks holds our tests for the Movie class
+
+//Don't let test-spec syntax throw you off.
+//The tests are meant to function just like they sound when spoken out loud
+describe("What's happening here", function() {
+    it("is similar to how we've tested our files locally with node", function() {
+
+
+    expect(1+1).to.equal(2) //if I console.log(1+1) I'd expect to see 2
+
+
+    let name = "Will"
+    expect(name).to.equal("Will") //if I console.log(name) I'd expect to see "Will"
+
+
+    let addOne = (num) => num + 1;
+    expect(addOne(1)).to.equal(2); //if I console.log(addOne(1)) I'd expect to see 2
+})
+})
+
+
+// this "describe" blocks holds our tests for the Movie class
 describe("Movie class", function() {
 
-    // This "it" block checks if the Movie class sets its attributes correctly on creation
+    // This "it" block runs tests to see if your Movie class
+    // sets its attributes correctly when we create a new instance of a Movie
     it("should set title, duration, and rating on creation", function() {
+
         //here we're creating an instance of a movie so we can test if the class is set up correctly
-        //Remember: an instance is just an object (i.e., let object = {key: "value"}) that belongs to a class
         let movieInstance = new Movie("The Matrix", 142, 9.3);
 
+        //Remember: an instance is just an object (i.e., let object = {key: "value"}) that belongs to a class
         //since an instance is just an object, we can key into its properties
         //keying into an object returns the value at the key (i.e., let value = object.key)
         expect(movieInstance.title).to.equal("The Matrix");
@@ -31,9 +71,11 @@ describe("Movie class", function() {
         expect(movieInstance["duration"]).to.equal(142);
     });
 
-    // Checks if the Movie class can correctly identify long movies
+    // This checks if the Movie class can correctly identify long movies
+    // by using a method you'll have to define
+    // you can identify the method name by looking at what's being called on an instance
     it("should correctly determine if a movie is long (more than 150 minutes)", function() {
-        //creating instances to test the isLong method
+        //We have to first create instances of Movies so that we can test the method
         let longMovie = new Movie("Titanic", 151, 7.8);
         let shortMovie = new Movie("The Lion King", 150, 8.1);
 
@@ -49,7 +91,7 @@ describe("Movie class", function() {
         let inception = new Movie("Inception", 148, 8.8);
 
         inception.updateRating(9.0);
-        expect(inception["rating"]).to.equal(9.0);
+        expect(inception.rating).to.equal(9.0);
     });
 });
 
