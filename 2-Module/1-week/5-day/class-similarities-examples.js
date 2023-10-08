@@ -1,4 +1,4 @@
-//Function that creates an object with name and randomFood properties
+//Function that creates an object with properties named "randomFood" and "name"
 let maker = function (name, randomFood) {
   let obj = {};
   obj.name = name;
@@ -44,13 +44,13 @@ classInstanceWithMethod.sayHello();
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-//creating an instance of an array and using the push method to add food strings
+//creating an array and using the push method to add food strings
 let globalArr = []
 globalArr.push("Queso", "Salsa", "Chicken")
 console.log(globalArr)
 
-//creating an instance of an object and keying into it's myArray property which returns an array.
-//I can then to call push which will add food strings
+// Creating an object with a 'myArray' property.
+// Using push to add food strings to this array.
 let globalObj = {myArray: []}
 globalObj.myArray.push("Queso", "Salsa", "Chicken")
 console.log(globalObj)
@@ -74,15 +74,16 @@ class ClassWithArrayProperty {
     this.myArray = [];
   }
 }
-//calling the class constructor which returns an object that is an instance of the class
+//creating an instance of the class using the class constructor
 let classInstanceWithArr = new ClassWithArrayProperty();
 //keying into the instance to call push which adds food to its array
 classInstanceWithArr.myArray.push("Queso", "Salsa", "Chicken");
 console.log(classInstanceWithArr);
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-//Function that creates an instance of an object and returns a function
-//calling the returned function increases the value of the outer object's instance (obj.num++)
+
+// Function that creates an object and returns a function.
+// Calling the returned function increments the `num` property of the object.
 let myObjAdder = function () {
   let obj = { num: 0 };
   return () => {
@@ -98,8 +99,8 @@ closureFunc();
 closureFunc();
 console.log(closureFunc());
 
-//Class that creates an instance of an object
-//calling the adder method increases the value of the instance's num property
+// Class that creates instances with a `num` property.
+// Calling the `adder` method increments the `num` property of the instance.
 class ClassThatAdds {
   constructor() {
     this.num = 0;
@@ -116,6 +117,7 @@ let someInstanceThatCanAdd = new ClassThatAdds();
 someInstanceThatCanAdd.adder();
 someInstanceThatCanAdd.adder();
 console.log(someInstanceThatCanAdd.adder());
+
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
