@@ -1,3 +1,4 @@
+//Function that creates an object with name and randomFood properties
 let maker = function (name, randomFood) {
   let obj = {};
   obj.name = name;
@@ -6,6 +7,7 @@ let maker = function (name, randomFood) {
 };
 console.log(maker("Will", "taco"));
 
+//Class that will create instances with name and randomFood properties
 class ClassMaker {
   constructor(name, randomFood) {
     this.name = name;
@@ -16,7 +18,7 @@ console.log(new ClassMaker("Will", "taco"));
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-
+//Function that creates and returns an object that has a sayHello method
 let myObjWithMethodCreator = function () {
   let obj = {};
   obj.sayHello = function () {
@@ -27,8 +29,11 @@ let myObjWithMethodCreator = function () {
 let objWithMethod = myObjWithMethodCreator();
 objWithMethod.sayHello();
 
+//Class that will create instances that have a sayHello method
 class InstanceWithMethodCreator {
-  //Look I don't even need a constructor!
+  constructor(){
+    //normally we'll define properties, but this is fine.
+  }
   sayHello() {
     console.log("hello world!");
   }
@@ -39,34 +44,45 @@ classInstanceWithMethod.sayHello();
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
+//creating an instance of an array and using the push method to add food strings
 let globalArr = []
 globalArr.push("Queso", "Salsa", "Chicken")
 console.log(globalArr)
 
+//creating an instance of an object and keying into it's myArray property which returns an array.
+//I can then to call push which will add food strings
 let globalObj = {myArray: []}
 globalObj.myArray.push("Queso", "Salsa", "Chicken")
 console.log(globalObj)
 
+//Function that creates and returns an object that has a key of myArray whose value is an array
 let myObjWithArrCreator = function () {
   let obj = {};
   obj.myArray = [];
   return obj;
 };
+//calling the function which returns an object
 let objWithArr = myObjWithArrCreator();
+//keying into the object to call push which adds food to its array
 objWithArr.myArray.push("Queso", "Salsa", "Chicken");
 console.log(objWithArr);
 
+//Class that will create instances (objects that belong to the class) that have a property called myArray
+//whose value is an array
 class ClassWithArrayProperty {
   constructor() {
     this.myArray = [];
   }
 }
+//calling the class constructor which returns an object that is an instance of the class
 let classInstanceWithArr = new ClassWithArrayProperty();
+//keying into the instance to call push which adds food to its array
 classInstanceWithArr.myArray.push("Queso", "Salsa", "Chicken");
 console.log(classInstanceWithArr);
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
+//Function that creates an instance of an object and returns a function
+//calling the returned function increases the value of the outer object's instance (obj.num++)
 let myObjAdder = function () {
   let obj = { num: 0 };
   return () => {
@@ -82,6 +98,8 @@ closureFunc();
 closureFunc();
 console.log(closureFunc());
 
+//Class that creates an instance of an object
+//calling the adder method increases the value of the instance's num property
 class ClassThatAdds {
   constructor() {
     this.num = 0;
@@ -101,6 +119,7 @@ console.log(someInstanceThatCanAdd.adder());
 
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
+//Static vs Instance Methods
 class StaticClassMaker {
   constructor() {
     this.instanceProperty = "I'm not static!";
