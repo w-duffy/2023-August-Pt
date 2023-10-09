@@ -66,6 +66,7 @@ describe("Movie class", function() {
         //keying into an object returns the value at the key (i.e., let value = object.key)
         expect(movieInstance.title).to.equal("The Matrix");
         expect(movieInstance.rating).to.equal(9.3);
+        //if you were to copy line 62 and 70 into your movie.js file, console.logging instance.duration would give you 142.
         expect(movieInstance["duration"]).to.equal(142);
     });
 
@@ -176,27 +177,27 @@ describe("Actor class", function() {
 
 describe("Movie class", function() {
     it("should have a cast which can be populated with actor instances", function() {
-        let movie = new Movie("Inception", 148, 8.8);
-        let leo = new Actor("Leonardo DiCaprio");
-        let ellen = new Actor("Ellen Page");
+        let movie = new Movie("There Will Be Blood", 158, 8.2);
+        let daniel = new Actor("Daniel Day-Lewis");
+        let paul = new Actor("Paul Dano");
 
         //Hint: What data type do we call push on?
         //You may need to revisit your model and add a property.
-        movie.cast.push(leo);
-        movie.cast.push(ellen);
+        movie.cast.push(daniel);
+        movie.cast.push(paul);
 
-        expect(movie.cast).to.deep.include.members([leo, ellen]);
+        expect(movie.cast).to.deep.include.members([daniel, paul]);
     });
 
 
     it("should correctly determine if an actor is in the movie", function() {
-        let movie = new Movie("The Departed", 151, 8.5);
-        let leo = new Actor("Leonardo DiCaprio");
-        movie.cast.push(leo);
+        let movie = new Movie("The Godfather", 175, 9.2);
+        let al = new Actor("Al Pacino");
+        movie.cast.push(al);
 
         //Hint: always check what the method is being called on to figure
         //out where and how it should be declared
-        expect(Movie.actorInMovie(movie, "Leonardo DiCaprio")).to.be.true;
+        expect(Movie.actorInMovie(movie, "Al Pacino")).to.be.true;
 
         //"to.be" and "to.equal" tell you what the method needs to evaluate to
         expect(Movie.actorInMovie(movie, "Tom Hanks")).to.be.false;
