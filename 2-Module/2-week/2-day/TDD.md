@@ -54,3 +54,32 @@ describe("Function returnsString: " ,()=> {
 
     })
 })
+```
+
+Utilizing chai, we can us the `expect` functionality to chain some readable code.
+Let's create a test to make sure a function runs as expected:
+
+
+```js
+const chai = require('chai');
+const expect = chai.expect;
+
+    function myHelloWorld(){
+        return "Hello World"
+    }
+
+describe("Function returnsString: " ,()=> {
+    it("Should be a function", () => {
+        expect(myHelloWorld).to.exist;
+        expect(myHelloWorld).to.be.a("function");
+    });
+    it("will return a string", ()=> {
+        expect(myHelloWorld()).to.be.a('string'); //tests that the return of myHelloWorld will be a string
+        //There are many ways to do this same check, so check chai docs!
+    });
+
+    it("will return 'Hello World'", ()=> {
+        expect(myHelloWorld()).to.eql('Hello World') //checks that return val will deeply equal 'Hello World';
+    });
+})
+```
