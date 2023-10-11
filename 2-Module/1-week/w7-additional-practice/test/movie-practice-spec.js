@@ -202,4 +202,18 @@ describe("Movie class", function() {
         //"to.be" and "to.equal" tell you what the method needs to evaluate to
         expect(Movie.actorInMovie(movie, "Tom Hanks")).to.be.false;
     });
+
+    it("should throw an error if the rating is not a number", function() {
+        let movie = new Movie("Inception", 148, 8.8);
+
+        // Expecting updateRating method to throw an error if the rating is not a number
+        expect(movie.updateRating.bind(movie, "not a number")).to.throw(TypeError, "Rating must be a number.");
+
+        // Expecting updateRating method to not throw an error if the rating is a number
+        expect(movie.updateRating.bind(movie, 9.0)).to.not.throw();
+
+        // Check the rating has been updated
+        expect(movie.rating).to.equal(9.0);
+    });
+    
 });
