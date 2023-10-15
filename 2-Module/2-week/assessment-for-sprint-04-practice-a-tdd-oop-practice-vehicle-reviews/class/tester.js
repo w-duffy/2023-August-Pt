@@ -1,5 +1,3 @@
-console.log("I'm in tester")
-
 const ElectricBicycle = require("./electric-bicycle");
 const Bicycle = require("./bicycle");
 const Review = require("./review");
@@ -14,7 +12,7 @@ class Tester {
     submitReview(vehicle, starRating, text) {
         console.log("still in tester")
         if (vehicle.validate() === true) {
-            // console.log("THIS LOOK", Review)
+
             let review = new Review(vehicle, this, starRating, text);
             review.addReview();
             this.setTesterAttribute(vehicle);
@@ -34,7 +32,7 @@ class Tester {
         }
     }
 }
-// console.log("still in tester")
+
 
 console.log("REVIEW", Review)
 module.exports = Tester;

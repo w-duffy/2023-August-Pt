@@ -5,9 +5,9 @@ const Vehicle = require("../class/vehicle.js");
 const Bicycle = require("../class/bicycle.js");
 
 const ElectricBicycle = require("../class/electric-bicycle.js");
-console.log("before importing Review")
+
 const Review = require("../class/review.js");
-console.log("after importing Review")
+
 
 const Tester = require("../class/tester.js");
 
@@ -302,18 +302,18 @@ console.log("4")
         let validVehicle = new Vehicle("Toyota Prius", 2005, 23000);
 
         tester.submitReview(validVehicle, 3, "Very cozy.");
-        // expect(tester.bikeTester).to.be.oneOf([undefined, false]);
-        // expect(tester.eBikeTester).to.be.oneOf([undefined, false]);
+        expect(tester.bikeTester).to.be.oneOf([undefined, false]);
+        expect(tester.eBikeTester).to.be.oneOf([undefined, false]);
 
-        // let validBicycle = new Bicycle("Trek 520", 2023, 1829);
+        let validBicycle = new Bicycle("Trek 520", 2023, 1829);
 
-        // tester.submitReview(validBicycle, 5, "Great for touring and gravel");
-        // expect(tester.bikeTester).to.be.true;
-        // expect(tester.eBikeTester).to.be.oneOf([undefined, false]);
+        tester.submitReview(validBicycle, 5, "Great for touring and gravel");
+        expect(tester.bikeTester).to.be.true;
+        expect(tester.eBikeTester).to.be.oneOf([undefined, false]);
 
-        // let validEBike = new ElectricBicycle("Specialized", 2010, 600, "Touring", 18, 26, 30, 45);
-        // tester.submitReview(validEBike, 1, "Terrible range");
-        // expect(tester.bikeTester).to.be.true;
-        // expect(tester.eBikeTester).to.be.true;
+        let validEBike = new ElectricBicycle("Specialized", 2010, 600, "Touring", 18, 26, 30, 45);
+        tester.submitReview(validEBike, 1, "Terrible range");
+        expect(tester.bikeTester).to.be.true;
+        expect(tester.eBikeTester).to.be.true;
     });
 });
