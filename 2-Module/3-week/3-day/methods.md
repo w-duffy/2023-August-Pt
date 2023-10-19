@@ -69,24 +69,24 @@ Justification: This will visit each element in the array, but not create extra s
 
 ## `arr.map()`
 
-Time complexity: O(n)
-Space complexity: O(n)
+Time complexity: ??
+Space complexity: ??
 Justification: Assuming the callback is constant time complexity, we iterate over the array, performing operations for each element, returning a new array.
 
 [map on MDN][map]
 
 ## `arr.filter()`
 
-Time complexity: O(n)
-Space complexity: O(n)
+Time complexity: ??
+Space complexity: ??
 Justification: Assuming the callback is constant time complexity, we iterate over the array, performing operations for each element, returning a new array.
 
 [filter on MDN][filter]
 
 ## `arr.reduce()`
 
-Time complexity: O(n)
-Space complexity: O(1)
+Time complexity: ??
+Space complexity: ??
 Justification: Reduce applies a reducer function to each elemnt in the array.
 Assuming time complexity of the acculumator is constant, and this is in place.
 
@@ -94,16 +94,16 @@ Assuming time complexity of the acculumator is constant, and this is in place.
 
 ## `arr.reverse()`
 
-Time complexity: O(n)
-Space complexity: O(1)
+Time complexity: ??
+Space complexity: ??
 Justification: Reverse will move n elements in-place.
 
 [reverse on MDN][reverse]
 
 ## `[...arr]`
 
-Time complexity: O(n)
-Space complexity: O(n)
+Time complexity: ??
+Space complexity: ??
 Justification: This will copy all n elements in to the new array of length n.
 
 [spread on MDN][spread]
