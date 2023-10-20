@@ -62,3 +62,56 @@ function getFirstElement(arr) {
 }
 ```
 **Expected Time Complexity**: ??
+
+
+
+**Practice**
+
+```javascript
+function addElementToEnd(arr, value) {
+    arr.push(value);
+}
+
+function removeElementFromEnd(arr) {
+    arr.pop();
+}
+```
+
+**Expected Time Complexity**: ??
+
+**Practice 15**
+
+```javascript
+function addElementToStart(arr, value) {
+    arr.unshift(value);
+}
+
+function removeElementFromStart(arr) {
+    arr.shift();
+}
+```
+
+**Expected Time Complexity**: ??
+
+**Practice 16**
+
+```javascript
+function arrayManipulation(arr, valuesToAdd) {
+    arr.push(10);
+    arr.shift();
+    arr.unshift(5);
+    return arr.concat(valuesToAdd);
+}
+```
+
+**Expected Time Complexity**: ??
+
+
+**Final problem**
+```javascript
+function processArray(arr) {
+    return arr.filter(num => num > 5).map(num => num * 2).reduce((acc, currVal) => acc + currVal, 0);
+}
+
+```
+**Expected Time Complexity**: ??
