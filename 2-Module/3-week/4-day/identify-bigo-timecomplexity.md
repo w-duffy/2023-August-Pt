@@ -1,4 +1,4 @@
-Evaluate the time complexity of each function:
+## Evaluate the time complexity of each function:
 
 **Practice 1**
 ```javascript
@@ -65,7 +65,7 @@ function getFirstElement(arr) {
 
 
 
-**Practice**
+**Practice  7**
 
 ```javascript
 function addElementToEnd(arr, value) {
@@ -79,7 +79,7 @@ function removeElementFromEnd(arr) {
 
 **Expected Time Complexity**: ??
 
-**Practice 15**
+**Practice 8**
 
 ```javascript
 function addElementToStart(arr, value) {
@@ -93,7 +93,7 @@ function removeElementFromStart(arr) {
 
 **Expected Time Complexity**: ??
 
-**Practice 16**
+**Practice 9**
 
 ```javascript
 function arrayManipulation(arr, valuesToAdd) {
