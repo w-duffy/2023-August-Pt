@@ -1,3 +1,7 @@
+// let myStack = []
+// arr.push()
+// arr.pop()
+// arr.shift()
 class Stack {
     constructor() {
         this.data = [];
@@ -17,13 +21,13 @@ class Stack {
 }
 
 
-// let billsStacks = new Stack()
+let billsStacks = new Stack()
 
-// billsStacks.push(1)
-// billsStacks.push(2)
-// billsStacks.push(3)
-// let returnedVal = billsStacks.pop()
-// console.log(returnedVal)
+billsStacks.push(1)
+billsStacks.push(2)
+billsStacks.push(3)
+let returnedVal = billsStacks.pop()
+console.log(returnedVal)
 // billsStacks.unshift() //ERROR
 //
 // time complexity?
@@ -96,7 +100,7 @@ let value4 = -2_147_483_649
 
 
 let int32Array = new Int32Array([value1, value2, value3, value4]);
-// console.log(int32Array)
+console.log(int32Array)
 
 // we're not concerned with that in JS unless you're
 // doing working with binary data

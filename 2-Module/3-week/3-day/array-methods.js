@@ -11,26 +11,26 @@ const times = sizes.map(size => ({ size, time: testShiftTime(size) }));
 
 console.table(times)
 
-// function testPopTime(n) {
-//     const arr = new Array(n).fill(0);
+function testPopTime(n) {
+    const arr = new Array(n).fill(0);
 
 
-//     for (let i = 0; i < 100; i++) {
-//         arr.pop();
-//         arr.push(0);
-//     }
+    for (let i = 0; i < 100; i++) {
+        arr.pop();
+        arr.push(0);
+    }
 
-//     const startTime = performance.now();
-//     arr.push(1);
-//     const endTime = performance.now();
+    const startTime = performance.now();
+    arr.push(1);
+    const endTime = performance.now();
 
-//     return endTime - startTime;
-// }
+    return endTime - startTime;
+}
 
-// const sizes = [10, 100, 1000, 10000, 100000, 1_000_000, 0_010_0000];
-// const times = sizes.map(size => ({ size, time: testPopTime(size) }));
+const sizes = [10, 100, 1000, 10000, 100000, 1_000_000, 0_010_0000];
+const times = sizes.map(size => ({ size, time: testPopTime(size) }));
 
-// console.table(times)
+console.table(times)
 
 
 

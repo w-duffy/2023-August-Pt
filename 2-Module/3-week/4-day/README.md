@@ -220,6 +220,8 @@ counting pattern.
 Formula: Multiply each digit by the number base raised to the nth power, where n
 is its position _starting from the right_. Then, add all of the results together.
 
+Charles -- "It unshifts the new characters instead of pushing"
+
 To convert 0b11001010 to decimal, remember the base is 2:
 
 2^0 *0 = 0
