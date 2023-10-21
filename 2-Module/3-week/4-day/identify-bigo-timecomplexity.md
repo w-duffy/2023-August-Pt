@@ -72,10 +72,12 @@ function addElementToEnd(arr, value) {
     arr.push(value);
 }
 
+
 function removeElementFromEnd(arr) {
     arr.pop();
 }
 ```
+
 
 **Expected Time Complexity**: ??
 
@@ -83,7 +85,13 @@ function removeElementFromEnd(arr) {
 
 ```javascript
 function addElementToStart(arr, value) {
-    arr.unshift(value);
+    let index = 0;
+
+    while(index < arr.length){
+        arr.unshift(value);
+        index++
+    }
+
 }
 
 function removeElementFromStart(arr) {
